@@ -1,2 +1,20 @@
 ---
 # tasks file for ansible-role-macdev/
+
+
+# so I never have to google for it and end up at the same 
+# page: http://osxdaily.com/2010/05/06/speed-up-a-slow-terminal-by-clearing-log-files/
+# only to: 
+#    - be forced to read it again
+#    - type in "sudo rm -f " in a terminal 
+#    - highlight /private/var/log/asl/ 
+#    - command+C
+#    - mouse over to terminal 
+#    - command+P
+#    - type control-E *.asl
+#    - hit enter
+#    - wait until next time 
+#    - repeat this list
+
+
+- shell: sudo rm -f /private/var/log/asl/*.asl
