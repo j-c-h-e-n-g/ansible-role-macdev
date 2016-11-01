@@ -17,4 +17,8 @@
 #    - repeat this list
 
 
-- shell: sudo rm -f /private/var/log/asl/*.asl
+# - shell: sudo rm -f /private/var/log/asl/*.asl
+
+- cron: name="clear *.asl cache" minute="0" hour="2" job="rm -f /private/var/log/asl/*.asl"
+
+
